@@ -1,4 +1,6 @@
 # FISABIO gapseq Workshop
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/kshitijtandon/fisabio-gapseq-workshop/blob/main/notebooks/FISABIO_gapseq_workshop.ipynb)
 
 This repository contains demo material for the FISABIO gapseq workshop.
 
@@ -23,5 +25,5 @@ demo organism: *Escherichia coli* K-12.
 ## Quick start
 
 ```bash
-git clone https://github.com//fisabio-gapseq-workshop.git
+git clone https://github.com/kshitijtandon/fisabio-gapseq-workshop.git
 cd fisabio-gapseq-workshop
