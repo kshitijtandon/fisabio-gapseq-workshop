@@ -1,6 +1,6 @@
 # FISABIO Workshop: Genome-Scale Metabolic Model Reconstruction using gapseq
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kshitijtandon/fisabio-gapseq-workshop/blob/main/notebooks/FISABIO_gapseq_workshop.ipynb#scrollTo=CTMpT-xbXAPR)
 
 This repository contains the materials for the FISABIO workshop on reconstructing genome-scale metabolic models (GEMs) using **gapseq**.
 
