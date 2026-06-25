@@ -1,29 +1,93 @@
-# FISABIO gapseq Workshop
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
-https://colab.research.google.com/github/kshitijtandon/fisabio-gapseq-workshop/blob/main/notebooks/FISABIO_gapseq_workshop.ipynb)
+# FISABIO Workshop: Genome-Scale Metabolic Model Reconstruction using gapseq
 
-This repository contains demo material for the FISABIO gapseq workshop.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK)
 
-## Workflow
+This repository contains the materials for the FISABIO workshop on reconstructing genome-scale metabolic models (GEMs) using **gapseq**.
 
-gapseq find  
-→ gapseq find-transport  
-→ gapseq draft  
-→ gapseq fill  
+Participants will learn how to:
 
-## Dataset
+- Predict metabolic reactions from a bacterial genome
+- Predict metabolic pathways
+- Predict transporters
+- Construct a draft genome-scale metabolic model
+- Perform gap-filling under a defined growth medium
+- Inspect the reconstructed metabolic model
 
-demo organism: *Escherichia coli* K-12.
+---
 
-## Repository contents
+## Repository structure
 
-- `data/`: prepared input and output files for the demo
-- `scripts/`: command-line scripts for running gapseq
-- `notebooks/`: Google Colab workshop notebook
-- `slides/`: workshop slides, if available
+```
+fisabio-gapseq-workshop/
+├── data/
+├── notebooks/
+├── scripts/
+└── README.md
+```
 
-## Quick start
+---
+
+## Getting started
+
+### Option 1 (Recommended)
+
+Click the badge above to launch the notebook in Google Colab.
+
+### Option 2
+
+Clone the repository
 
 ```bash
 git clone https://github.com/kshitijtandon/fisabio-gapseq-workshop.git
-cd fisabio-gapseq-workshop
+```
+
+---
+
+## Dataset
+
+Example organism:
+
+**Escherichia coli K-12**
+
+All computationally intensive steps have been precomputed so that the workshop can be completed entirely within Google Colab.
+
+---
+
+## Workflow
+
+Protein FASTA
+
+↓
+
+Reaction & pathway prediction
+
+↓
+
+Transporter prediction
+
+↓
+
+Draft model reconstruction
+
+↓
+
+Gap-filling
+
+↓
+
+Genome-scale metabolic model
+
+---
+
+## Acknowledgements
+
+Workshop developed by
+
+- Dr Kshitij Tandon
+- Dr Vanessa R. Marcelino
+
+---
+
+## Citation
+
+If you use these materials, please cite the gapseq publication together with this repository.
