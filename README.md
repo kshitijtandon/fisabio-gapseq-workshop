@@ -22,6 +22,8 @@ fisabio-gapseq-workshop/
 ├── data/
 ├── notebooks/
 ├── scripts/
+├── docs/
+│   └── ecoli_k12-memote.html
 └── README.md
 ```
 
