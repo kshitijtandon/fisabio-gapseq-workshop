@@ -17,14 +17,23 @@ Participants will learn how to:
 
 ## Repository structure
 
+
 ```
 fisabio-gapseq-workshop/
-├── data/
 ├── notebooks/
-├── scripts/
+├── data/
+│   ├── genomes/                 # genome or MAG FASTA files
+│   ├── proteins/                # optional protein FASTA files
+│   ├── media/                   # medium files, e.g. gut.csv or M9.csv
+│   ├── gapseq_precomputed/      # precomputed gapseq outputs
+│   └── models/                  # SBML/RDS models
 ├── docs/
-│   └── ecoli_k12-memote.html
-└── README.md
+│   ├── figures/
+│   └── memote_reports/
+└── scripts/
+    ├── run_gapseq_demo.sh
+    ├── run_memote.sh
+    └── summarise_model.py
 ```
 
 ---
