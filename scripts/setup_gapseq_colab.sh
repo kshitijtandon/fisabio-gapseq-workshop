@@ -1,34 +1,43 @@
 #!/bin/bash
+set -e
 
-echo "Updating apt..."
+echo "Installing system dependencies..."
 apt-get update -qq
-
-echo "Installing dependencies..."
-apt-get install -y \
+apt-get install -y -qq \
+    git \
+    wget \
+    curl \
     ncbi-blast+ \
-    hmmer \
-    infernal \
-    barrnap \
     bedtools \
-    libxml2-utils \
-    python3-pip
+    barrnap \
+    bc \
+    parallel \
+    r-base-core \
+    libglpk-dev \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev
 
 echo "Cloning gapseq..."
-git clone https://github.com/jotech/gapseq.git
+if [ ! -d "gapseq" ]; then
+    git clone https://github.com/jotech/gapseq.git
+fi
 
 cd gapseq
 
-echo "Downloading databases..."
-bash download-db.sh
+echo "Installing required R packages..."
+Rscript -e 'install.packages(c("data.table","stringr","getopt","doParallel","foreach","R.utils","stringi","glpkAPI","CHNOSZ","jsonlite","httr"), repos="https://cloud.r-project.org")'
 
-echo "Compiling..."
-make
+Rscript -e 'if (!requireNamespace("BiocManager", quietly=TRUE)) install.packages("BiocManager", repos="https://cloud.r-project.org"); BiocManager::install("Biostrings", ask=FALSE, update=FALSE)'
+
+echo "Downloading gapseq sequence databases..."
+bash ./src/update_sequences.sh
 
 echo "Adding gapseq to PATH..."
-echo 'export PATH=/content/fisabio-gapseq-workshop/gapseq/src:$PATH' >> ~/.bashrc
-export PATH=/content/fisabio-gapseq-workshop/gapseq/src:$PATH
+chmod +x ./gapseq
+export PATH="$(pwd):$PATH"
 
 echo ""
 echo "Installation finished."
-
-gapseq --help
+echo "Testing gapseq..."
+./gapseq test
