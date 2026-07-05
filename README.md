@@ -24,16 +24,17 @@ fisabio-gapseq-workshop/
 ├── data/
 │   ├── genomes/                 # genome or MAG FASTA files
 │   ├── proteins/                # optional protein FASTA files
-│   ├── media/                   # medium files, e.g. gut.csv or M9.csv
+│   ├── media/                   # medium files, e.g. MM_glut.csv
 │   ├── gapseq_precomputed/      # precomputed gapseq outputs
 │   └── models/                  # SBML/RDS models
 ├── docs/
 │   ├── figures/
 │   └── memote_reports/
+├── results/
+│	└──MEMOTE_report.html
 └── scripts/
-    ├── run_gapseq_demo.sh
-    ├── run_memote.sh
-    └── summarise_model.py
+    ├── 01_gapseq_workflow.sh    # SLURM script used on University of Melbourne HPC for workflow
+    └──setup_gapseq_colab.sh	 # bash script to install dependencies and gapseq
 ```
 
 ---
@@ -95,7 +96,6 @@ Genome-scale metabolic model
 Workshop developed by
 
 - Dr Kshitij Tandon
-- Dr Vanessa R. Marcelino
 
 ---
 
