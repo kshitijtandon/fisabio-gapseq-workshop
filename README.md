@@ -34,8 +34,7 @@ fisabio-gapseq-workshop/
 │   ├── media/                   # Growth media (e.g. MM_glu.csv)
 │   ├── gapseq_precomputed/      # Precomputed outputs from gapseq
 │   └── models/                  # Draft and gap-filled metabolic models
-├── results/
-│   └── ecoli_k12_memote.html    # Precomputed MEMOTE report
+├─slides/
 ├── scripts/
 │   ├── 01_gapseq_workflow.sh    # Example HPC workflow
 │   └── setup_gapseq_colab.sh    # Install gapseq and dependencies in Google Colab
