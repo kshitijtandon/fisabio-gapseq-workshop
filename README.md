@@ -8,6 +8,9 @@ The workshop is designed as a hands-on Google Colab tutorial that demonstrates t
 
 ---
 
+## Workbook with answers to conceptual-questions
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kshitijtandon/fisabio-gapseq-workshop/blob/main/notebooks/FISABIO_gapseq_workshop_conceptual_answers.ipynb)
+
 # Learning outcomes
 
 By completing this tutorial, participants will learn how to:
